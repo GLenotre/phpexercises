@@ -45,6 +45,8 @@ $companies = [
     ]
 ];
 
+krsort($companies);
+
 foreach ($companies as $company => $name) {
     sort($name);
     $companies[$company] = $name;
