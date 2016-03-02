@@ -45,10 +45,10 @@ $companies = [
     ]
 ];
 
-foreach ($companies as $company => $name) {
-    ksort($companies);    
-}
-
+// foreach ($companies as $company => $name) {
+    
+// }
+ksort($companies);    
 print_r($companies); 
 
 
