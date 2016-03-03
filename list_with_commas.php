@@ -11,7 +11,8 @@ $physicists_array = humanizedList($physicistsArray);
 	$famousFakePhysicists = $famousFakePhysicists . ", and " . $tony;
     echo "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists}.\n";
     function humanizedList ($array, $sort = false) {
-    	return $array;
+        asort($array);
+        return $array;
     }
 
 // print_r($physicists_array);
