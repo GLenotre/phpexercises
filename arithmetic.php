@@ -45,6 +45,12 @@ function modulo($a, $b)
     }
 }
 
+function throwErrorMessage ($error = 'numeric') {
+    if($error == 'number') {
+        return "Your inputs"
+    }
+}
+
 // Add code to test your functions here
 echo add($x, $y) . PHP_EOL;
 echo subtract($x, $y) . PHP_EOL;
