@@ -45,11 +45,11 @@ $companies = [
     ]
 ];
 
-krsort($companies);
+arsort($companies);
 
-foreach ($companies as $company => $name) {
-    sort($name);
-    $companies[$company] = $name;
+foreach ($companies as $company => $name) { 
+    asort($name);  // sort the value (people)
+    $companies[$company] = $name;  // reassign the value/element in the array
 }
 
 print_r($companies);
