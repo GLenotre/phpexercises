@@ -41,7 +41,7 @@ public function logError()
 public function writeFile($message) 
 {
 	$this->handle = fopen($this->filename, 'a'); //$this uses a variable that is available across all the methods in the class
-	if (is_writable($this->filename)){
+	if (is_writable($this->filename) && touch($this->filename)){
 		fwrite($this->handle, PHP_EOL . $message);  //$this allows us to use the property of a class instead of a local variable
 		fclose($this->handle);	
 	}
