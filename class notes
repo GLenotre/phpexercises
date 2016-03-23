@@ -1,0 +1,9 @@
+<?php
+
+$filename = 'cities.txt';
+	if(file_exists('imaginary.txt')){   // only opens if the file exists
+	var_dump($handle) = fopen('imaginary.txt', 'r');  // opens the file
+
+	$content = fread($handle, filesize($filename));
+	var_dump($handle);
+	}
