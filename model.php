@@ -5,7 +5,13 @@
 
 class Model
 {
+	protected static $table = '';  // every single instance of this will share the same value
 	protected $attributes = [];
+
+	public function __construct($name, $value)
+	{
+
+	}
 
 // A magic setter to create key/value pairs in the attributes array.
 	public function __set($name, $value) 
@@ -23,6 +29,11 @@ class Model
 
 	    return null;
 	}
+
+	public function getTablename(){
+		return self::$table;	
+	}
+	
 
 }
 
