@@ -28,7 +28,7 @@ class Rectangle
     }
 
     protected function getWidth()
-    {
+    {0
     	return $this->width;
     }
 
